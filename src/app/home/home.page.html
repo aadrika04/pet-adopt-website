@@ -1,0 +1,149 @@
+<!-- Sidebar Menu -->
+<ion-menu contentId="main-content" side="start">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <!-- Home -->
+      <ion-item routerLink="/home">
+        <ion-icon name="home" slot="start"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-item>
+
+      <!-- About -->
+      <ion-item routerLink="/about">
+        <ion-icon name="information-circle" slot="start"></ion-icon>
+        <ion-label>About</ion-label>
+      </ion-item>
+
+      <!-- Dogs -->
+      <ion-item routerLink="/dog-details">
+        <ion-icon name="paw" slot="start"></ion-icon>
+        <ion-label>Dogs</ion-label>
+      </ion-item>
+
+      <!-- Cats -->
+      <ion-item routerLink="/cat-details">
+        <ion-icon name="paw" slot="start"></ion-icon>
+        <ion-label>Cats</ion-label>
+      </ion-item>
+
+      <!-- Others Dropdown -->
+      <ion-item>
+        <div class="dropdown" style="width: 100%;">
+          <a class="dropdown-toggle" id="othersDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <ion-icon name="paw" slot="start"></ion-icon>
+            <ion-label>Others</ion-label>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="othersDropdown">
+            <li><a class="dropdown-item" routerLink="/birds">Birds</a></li>
+            <li><a class="dropdown-item" routerLink="/reptiles">Reptiles</a></li>
+            <li><a class="dropdown-item" routerLink="/rabbit-details">Rabbits </a></li>
+            
+
+          </ul>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- Main Content and Header -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Pet Adoption</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="main-content">
+  <ion-searchbar placeholder="Search Terrier, Kitten, etc." style="margin-bottom: 20px;"></ion-searchbar>
+  <img src="assets/images/adopt-a-pet.jpeg" alt="Banner Image" style="width: 100%; margin-bottom: 20px;">
+
+  <!-- Existing Grid with Cards -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card button routerLink="/dogs">
+          <ion-card-content>
+            <ion-icon name="paw" size="large" color="primary"></ion-icon>
+            <ion-label>Dogs</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card button routerLink="/cat-details">
+          <ion-card-content>
+            <ion-icon name="paw" size="large" color="primary"></ion-icon>
+            <ion-label>Cats</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card button routerLink="/others">
+          <ion-card-content>
+            <ion-icon name="paw" size="large" color="primary"></ion-icon>
+            <ion-label>Other Animals</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card button routerLink="/shelters">
+          <ion-card-content>
+            <ion-icon name="home" size="large" color="primary"></ion-icon>
+            <ion-label>Shelters & Rescues</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- New Grid with Article Cards -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-md="6">
+        <ion-card>
+          <img src="assets/dog-adoption.jpg" alt="Dog Adoption" />
+          <ion-card-header>
+            <ion-avatar slot="start">
+              <img src="assets/dog-adoption.jpg" alt="Dog Avatar" />
+            </ion-avatar>
+            <ion-card-title>Dog Adoption Articles</ion-card-title>
+            <ion-card-subtitle>Learn more about caring for your new dog</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-button expand="block" fill="clear" color="primary" href="/dog-articles">
+              Read More
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-md="6">
+        <ion-card>
+          <img src="assets/cat-adoption.jpg" alt="Cat Adoption" />
+          <ion-card-header>
+            <ion-avatar slot="start">
+              <img src="assets/cat_avatar.jpg" alt="Cat Avatar" />
+            </ion-avatar>
+            <ion-card-title>Cat Adoption Articles</ion-card-title>
+            <ion-card-subtitle>Helpful insights on what to expect.</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-button expand="block" fill="clear" color="primary" href="/cat-articles">
+              Read More
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

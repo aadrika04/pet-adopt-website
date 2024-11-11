@@ -1,0 +1,34 @@
+ion-header {
+    --background: #f89c8c; /* Soft coral theme for the header */
+  }
+  
+  ion-card {
+    margin-bottom: 20px;
+  }
+  
+  ion-card-title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  ion-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  ion-avatar {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  ion-avatar img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  ion-button {
+    margin-top: 20px;
+  }
+  

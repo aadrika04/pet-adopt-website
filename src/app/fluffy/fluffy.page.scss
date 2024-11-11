@@ -1,0 +1,44 @@
+.pet-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .pet-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+  }
+  
+  .stat-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .stat-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .blue {
+    background-color: #4A90E2;
+  }
+  
+  .red {
+    background-color: #E94E77;
+  }
+  
+  .green {
+    background-color: #A3CB38;
+  }
+  

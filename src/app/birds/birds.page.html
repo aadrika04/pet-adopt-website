@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Bird Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Iterate over the birds array -->
+  <ion-card *ngFor="let bird of birds">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="bird.imageUrl" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ bird.name }}</h2>
+        <p>{{ bird.description }}</p>
+      </ion-label>
+    </ion-item>
+
+    <!-- Display bird attributes as chips -->
+    <ion-row>
+      <ion-chip color="success" *ngIf="bird.isFriendly">
+        <ion-label>Friendly</ion-label>
+      </ion-chip>
+      <ion-chip color="primary" *ngIf="bird.isVaccinated">
+        <ion-label>Vaccinated</ion-label>
+      </ion-chip>
+      <ion-chip color="tertiary" *ngIf="bird.isTrained">
+        <ion-label>Trained</ion-label>
+      </ion-chip>
+    </ion-row>
+
+    <!-- Like and Dislike buttons -->
+    <ion-item lines="none" class="button-row">
+      <ion-button fill="clear" color="danger" slot="start">
+        <ion-icon name="thumbs-up-outline"></ion-icon>
+        <ion-label>LIKE</ion-label>
+      </ion-button>
+      <ion-button fill="clear" color="danger" slot="end">
+        <ion-icon name="thumbs-down-outline"></ion-icon>
+        <ion-label>DISLIKE</ion-label>
+      </ion-button>
+    </ion-item>
+
+    <!-- Adopt button -->
+    <ion-item lines="none" class="adopt-button-container">
+      <ion-button expand="block" color="primary" [routerLink]="['/adopt', bird.link]" class="adopt-button">
+        ADOPT
+      </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

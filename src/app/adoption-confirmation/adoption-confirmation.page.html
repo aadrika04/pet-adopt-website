@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Adoption Confirmation</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="confirmation-content">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Thank You for Adopting!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Congratulations on your decision to adopt!</p>
+      <p>Your new friend is:</p>
+      <h2 class="pet-name">{{ petName }}</h2> <!-- Display the pet name here -->
+      <p>We hope you both enjoy a wonderful journey together!</p>
+      <p>If you have any questions, feel free to reach out to us.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Button to go back to the available pets list -->
+  <ion-button expand="full" color="success" routerLink="/animals">Back to Available Pets</ion-button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-title>PetPlace &copy; 2024</ion-title>
+  </ion-toolbar>
+</ion-footer>

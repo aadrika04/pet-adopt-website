@@ -1,0 +1,119 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Bunny Profile -->
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/bunny.png" />
+      </ion-avatar>
+      <ion-label>
+        
+        <h2>Bunny</h2>
+        <p>Bunny is playful and curious. She loves to make friends and is looking for a new home.</p>
+      </ion-label>
+    </ion-item>
+    <ion-row>
+      <!-- Different Colors for Tags -->
+      <ion-chip color="success">
+        <ion-label>Friendly</ion-label>
+      </ion-chip>
+      <ion-chip color="warning">
+        <ion-label>Neutered</ion-label>
+      </ion-chip>
+      <ion-chip color="tertiary">
+        <ion-label>Vaccinated</ion-label>
+      </ion-chip>
+    </ion-row>
+    <ion-item lines="none">
+      <ion-button fill="clear" slot="start">
+        <ion-icon name="thumbs-up-outline"></ion-icon>
+        <ion-label>Like</ion-label>
+      </ion-button>
+      <ion-button fill="clear" slot="end">
+        <ion-icon name="thumbs-down-outline"></ion-icon>
+        <ion-label>Dislike</ion-label>
+      </ion-button>
+    </ion-item>
+    <ion-button expand="block" color="primary" routerLink="/bunny">
+      Enquire for Adoption
+    </ion-button>
+  </ion-card>
+
+  <!-- Pepper Profile -->
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/images/pepper.png" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Pepper</h2>
+        <p>Pepper is adventurous and loves to explore. She's looking for a cozy place to call home.</p>
+      </ion-label>
+    </ion-item>
+    <ion-row>
+      <!-- Different Colors for Tags -->
+      <ion-chip color="success">
+        <ion-label>Friendly</ion-label>
+      </ion-chip>
+      <ion-chip color="tertiary">
+        <ion-label>Vaccinated</ion-label>
+      </ion-chip>
+    </ion-row>
+    <ion-item lines="none">
+      <ion-button fill="clear" slot="start">
+        <ion-icon name="thumbs-up-outline"></ion-icon>
+        <ion-label>Like</ion-label>
+      </ion-button>
+      <ion-button fill="clear" slot="end">
+        <ion-icon name="thumbs-down-outline"></ion-icon>
+        <ion-label>Dislike</ion-label>
+      </ion-button>
+    </ion-item>
+    
+  </ion-card>
+
+  <!-- Nibbles Profile -->
+  <ion-card>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/images/nibbles.png" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Nibbles</h2>
+        <p>Nibbles is calm and affectionate. She loves to cuddle and is looking for a peaceful home.</p>
+      </ion-label>
+    </ion-item>
+    <ion-row>
+      <!-- Different Colors for Tags -->
+      <ion-chip color="success">
+        <ion-label>Friendly</ion-label>
+      </ion-chip>
+      <ion-chip color="danger">
+        <ion-label>Not Neutered</ion-label>
+      </ion-chip>
+      <ion-chip color="primary">
+        <ion-label>Vaccinated</ion-label>
+      </ion-chip>
+    </ion-row>
+    <ion-item lines="none">
+      <ion-button fill="clear" slot="start">
+        <ion-icon name="thumbs-up-outline"></ion-icon>
+        <ion-label>Like</ion-label>
+      </ion-button>
+      <ion-button fill="clear" slot="end">
+        <ion-icon name="thumbs-down-outline"></ion-icon>
+        <ion-label>Dislike</ion-label>
+      </ion-button>
+    </ion-item>
+    <ion-button expand="block" color="primary" routerLink="/nibbles">
+      Enquire for Adoption
+    </ion-button>
+  </ion-card>
+</ion-content>

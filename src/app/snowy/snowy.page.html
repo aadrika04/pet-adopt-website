@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Snowy</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Pet Image -->
+  <div class="pet-image">
+    <img src="assets/snowball.jpg" alt="Snowy">
+  </div>
+
+  <!-- Pet Details -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Snowy</ion-card-title>
+      <ion-card-subtitle>Persian Cat - Cozy Cat Shelter</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <!-- General Stats -->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e3f2fd;">
+          <ion-label>Playfulness</ion-label>
+          <div class="stat-circle blue">75%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #ffebee;">
+          <ion-label>Health</ion-label>
+          <div class="stat-circle red">88%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e8f5e9;">
+          <ion-label>Affection</ion-label>
+          <div class="stat-circle green">90%</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- About Section -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Snowy is a beautiful and gentle Persian cat from Cozy Cat Shelter. With her soft, fluffy fur and striking blue eyes, she is sure to steal your heart. Snowy enjoys lounging in sunny spots, playing with her favorite toys, and receiving plenty of cuddles. Her calm demeanor and affectionate nature make her a wonderful companion for families and individuals alike. Whether she’s purring in your lap or playfully batting at a string, Snowy brings joy to everyone she meets.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Adopt Button -->
+  <ion-button expand="block" color="success" [routerLink]="['/adoption-confirmation', { petName: 'Snowy' }]">
+  Adopt Snowy
+</ion-button>
+
+</ion-content>

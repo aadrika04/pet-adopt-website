@@ -1,0 +1,42 @@
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .splash-container {
+    text-align: center;
+    padding: 0 20px;
+
+    .splash-image {
+      width: 60%; /* Image size */
+      max-width: 250px; /* Optional: to limit the max size */
+      margin: 0 auto 20px; /* Center image and add space below */
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+     
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #333333; /* Dark gray color for the subtitle for more visibility */
+      margin-bottom: 30px;
+    }
+
+    .get-started-button {
+      --background: #f70776 ;/* Yellow button */
+      --color: #fff; /* White text */
+      border-radius: 12px;
+      font-weight: bold;
+      padding: 10px 0;
+      width: 80%;
+      max-width: 200px;
+      margin: 0 auto;
+      font-size: 16px;
+    }
+  }
+}

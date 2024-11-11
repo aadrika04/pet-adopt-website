@@ -1,0 +1,36 @@
+/* Global styles for theming */
+:root {
+    --ion-color-primary: #ff8a65;  
+    --ion-color-primary-contrast: #ffffff; 
+    --ion-toolbar-background: linear-gradient(45deg, #ff8a65, #ffccd5); 
+  }
+  
+  
+  ion-toolbar {
+    --background: var(--ion-toolbar-background);
+  }
+  ::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #35327b; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #831e79;
+    border-radius: 10px; 
+    border: 3px solid #5645ad;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5645ad; 
+  }
+  
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ff8a65 #ffccd5;
+  }
+
+
+  

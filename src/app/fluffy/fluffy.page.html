@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dog-details"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Fluffy</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Pet Image -->
+  <div class="pet-image">
+    <img src="assets/fluffy.jpg" alt="Fluffy">
+  </div>
+
+  <!-- Pet Details -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Fluffy</ion-card-title>
+      <ion-card-subtitle>Golden Retriever - Whiskers County</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <!-- General Stats -->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e0f7fa;">
+          <ion-label>Playfulness</ion-label>
+          <div class="stat-circle blue">85%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #ffebee;">
+          <ion-label>Health</ion-label>
+          <div class="stat-circle red">92%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e8f5e9;">
+          <ion-label>Friendliness</ion-label>
+          <div class="stat-circle green">88%</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- About Section -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Fluffy is a friendly and energetic Golden Retriever from Whiskers County. He enjoys playing fetch, swimming, and spending time with his family. Fluffy is well-behaved, gets along great with kids, and loves meeting new people.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Adopt Button -->
+  <ion-button expand="block" color="success">Adopt Fluffy</ion-button>
+</ion-content>

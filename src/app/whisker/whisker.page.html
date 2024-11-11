@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Whiskers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Pet Image -->
+  <div class="pet-image">
+    <img src="assets/whiskers.jpg" alt="Whiskers">
+  </div>
+
+  <!-- Pet Details -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Whiskers</ion-card-title>
+      <ion-card-subtitle>Persian Cat - Cozy Cat Shelter</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <!-- General Stats -->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e3f2fd;">
+          <ion-label>Playfulness</ion-label>
+          <div class="stat-circle blue">75%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #ffebee;">
+          <ion-label>Health</ion-label>
+          <div class="stat-circle red">90%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e8f5e9;">
+          <ion-label>Affection</ion-label>
+          <div class="stat-circle green">88%</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- About Section -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Whiskers is an elegant Persian cat from Cozy Cat Shelter. With her long, luxurious fur and captivating eyes, she has a regal presence. Whiskers enjoys lounging in cozy corners and is known for her gentle demeanor. She is a calm and affectionate cat, making her perfect for families or individuals seeking a quiet companion. Whiskers loves to be brushed and pampered, and she will reward you with soft purrs and cuddles. If you're looking for a serene and loving feline friend, Whiskers is ready to find her forever home!
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Adopt Button -->
+  <ion-button expand="block" color="success">Adopt Whiskers</ion-button>
+</ion-content>

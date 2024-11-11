@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Bunny</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Pet Image -->
+  <div class="pet-image">
+    <img src="assets/rabbit3.jpg" alt="Bunny">
+  </div>
+
+  <!-- Pet Details -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bunny</ion-card-title>
+      <ion-card-subtitle>Female Mini Rex Rabbit - Fluffy Bunny Shelter</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <!-- General Stats -->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e3f2fd;">
+          <ion-label>Playfulness</ion-label>
+          <div class="stat-circle blue">88%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #ffebee;">
+          <ion-label>Health</ion-label>
+          <div class="stat-circle red">87%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e8f5e9;">
+          <ion-label>Affection</ion-label>
+          <div class="stat-circle green">95%</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- About Section -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Bunny is a sweet female Mini Rex Rabbit from Fluffy Bunny Shelter. With her short, velvety fur and endearing personality, she quickly becomes a favorite. Bunny loves to be cuddled and is known for her gentle nature. She enjoys hopping around her play area and playing with her favorite toys. If you're looking for a loving and calm companion, Bunny is the perfect choice for you!
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Adopt Button -->
+  <ion-button expand="block" color="success">Adopt Bunny</ion-button>
+</ion-content>

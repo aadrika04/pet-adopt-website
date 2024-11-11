@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cat Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let cat of cats">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="cat.imageUrl" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ cat.name }}</h2>
+        <p>{{ cat.description }}</p>
+      </ion-label>
+    </ion-item>
+
+    <!-- Display cat attributes as chips -->
+    <ion-row>
+      <ion-chip color="success" *ngIf="cat.isFriendly">
+        <ion-label>Friendly</ion-label>
+      </ion-chip>
+      <ion-chip color="primary" *ngIf="cat.isVaccinated">
+        <ion-label>Vaccinated</ion-label>
+      </ion-chip>
+      <ion-chip color="tertiary" *ngIf="cat.isNeutered">
+        <ion-label>Neutered</ion-label>
+      </ion-chip>
+    </ion-row>
+
+    <!-- Like button -->
+    <ion-item lines="none">
+      <ion-button fill="clear" slot="start">
+        <ion-icon name="thumbs-up-outline"></ion-icon>
+        <ion-label>Like</ion-label>
+      </ion-button>
+      <ion-button fill="clear" slot="end">
+        <ion-icon name="thumbs-down-outline"></ion-icon>
+        <ion-label>Dislike</ion-label>
+      </ion-button>
+    </ion-item>
+
+    <!-- Adopt button -->
+    <ion-item lines="none">
+      <ion-button expand="block" color="primary" [routerLink]="['/whisker']" style="background-color: #ff5733; color: white;">
+        ADOPT
+      </ion-button>
+    </ion-item>
+  </ion-card>
+</ion-content>

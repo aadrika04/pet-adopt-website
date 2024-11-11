@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Nibbles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Pet Image -->
+  <div class="pet-image">
+    <img src="assets/rabbit1.jpg" alt="Nibbles">
+  </div>
+
+  <!-- Pet Details -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Nibbles</ion-card-title>
+      <ion-card-subtitle>Female Lop-Eared Rabbit - Fluffy Bunny Shelter</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <!-- General Stats -->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e3f2fd;">
+          <ion-label>Playfulness</ion-label>
+          <div class="stat-circle blue">80%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #ffebee;">
+          <ion-label>Health</ion-label>
+          <div class="stat-circle red">95%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e8f5e9;">
+          <ion-label>Affection</ion-label>
+          <div class="stat-circle green">90%</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- About Section -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Nibbles is a charming female Lop-Eared Rabbit from Fluffy Bunny Shelter. She is playful and loves to explore her surroundings. With her soft, floppy ears and gentle nature, Nibbles is an excellent companion for families and individuals alike. She enjoys munching on fresh veggies and cuddling up for some quality time. Nibbles is always ready for a game of hide and seek, making her a delightful addition to any home.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Adopt Button -->
+  <ion-button expand="block" color="success">Adopt Nibbles</ion-button>
+</ion-content>

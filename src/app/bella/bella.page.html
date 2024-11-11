@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Bella</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Pet Image -->
+  <div class="pet-image">
+    <img src="assets/bella.jpg" alt="Bella">
+  </div>
+
+  <!-- Pet Details -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bella</ion-card-title>
+      <ion-card-subtitle>Golden Retriever - Happy Paws Shelter</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <!-- General Stats -->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e3f2fd;">
+          <ion-label>Playfulness</ion-label>
+          <div class="stat-circle blue">85%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #ffebee;">
+          <ion-label>Health</ion-label>
+          <div class="stat-circle red">90%</div>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="stat-card" style="background-color: #e8f5e9;">
+          <ion-label>Affection</ion-label>
+          <div class="stat-circle green">95%</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- About Section -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>About</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Bella is a sweet and affectionate Golden Retriever from Happy Paws Shelter. She has a gentle temperament and is known for her love of cuddling and playing fetch. Bella enjoys long walks in the park and is always eager to meet new friends, both human and canine. Her playful nature and friendly spirit make her an ideal companion for families and individuals alike. With Bella around, there's never a dull moment!
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Adopt Button -->
+  <ion-button expand="block" color="success">Adopt Bella</ion-button>
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Dog Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Iterate over the pets array -->
+  <ion-card *ngFor="let pet of pets">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="pet.imageUrl" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ pet.name }}</h2>
+        <p>{{ pet.description }}</p>
+      </ion-label>
+    </ion-item>
+
+    <!-- Display pet tags as chips -->
+    <ion-row>
+      <ion-chip color="success" *ngFor="let tag of pet.tags">
+        <ion-label>{{ tag }}</ion-label>
+      </ion-chip>
+    </ion-row>
+
+    <!-- Like and Dislike buttons -->
+    <ion-item lines="none" class="button-row">
+      <ion-button fill="clear" color="danger" slot="start">
+        <ion-icon name="thumbs-up-outline"></ion-icon>
+        <ion-label>LIKE</ion-label>
+      </ion-button>
+      <ion-button fill="clear" color="danger" slot="end">
+        <ion-icon name="thumbs-down-outline"></ion-icon>
+        <ion-label>DISLIKE</ion-label>
+      </ion-button>
+    </ion-item>
+     <!-- Adopt button -->
+     <ion-item lines="none" class="adopt-button-container">
+      <ion-button expand="block" color="primary" [routerLink]="['/rocky']"style="background-color: #ff5733; color: white;" class="adopt-button"style="background-color: #ff5733; color: white;">
+        ADOPT
+      </ion-button>
+    </ion-item>
+    
+
+   
+    
+  </ion-card>
+</ion-content>
